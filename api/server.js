@@ -4,6 +4,8 @@ const ABI = require("./ABI.json");
 
 const app = express();
 
-add.listen(3000,() => {
+const PORT = 3000;
+
+add.listen(PORT,() => {
   console.log(`Server is running at ${PORT}`)
 })
