@@ -18,7 +18,15 @@ const fetchNFTs = async() => {
   }
   // console.log(Number(nftBalance));
 }
-fetchNFTs().then(console.log);
+// fetchNFTs().then(console.log);
+
+app.post('/members', async(req, res) => {
+  try {
+    const account
+  } catch (error) {
+    return.status(500).json({error: "Internal server error"});
+  }
+})
 
 
 
