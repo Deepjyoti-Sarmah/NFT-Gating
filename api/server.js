@@ -1,8 +1,10 @@
 const express = require("express");
 const {Web3} = require("web3"); 
 const ABI = require("./ABI.json");
+const cors = require("cors");
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 const web3 = new Web3("https://skilled-wiser-lake.ethereum-sepolia.discover.quiknode.pro/73477a64596690dd501ed8f4cd73113918f4800a/");
 const contractAddress = "0x1C5008E8853D89E6bD823A72FCB6512fA1b74EC8";
