@@ -2,12 +2,12 @@ const axios = require('axios');
 
 const headers = {
   'accept': 'application/json',
-  'x-api-key': 'YOUR API KEY'
+  'x-api-key':'QN_f14efde44e6543c980dd6f11884a7f75'
 };
 
 const data = {
   name: 'My Destination',
-  to_url: 'https://7de9-103-171-168-142.ngrok-free.app/webhook',
+  to_url: '',
   webhook_type: 'POST',
   service: 'webhook',
   payload_type: 5
