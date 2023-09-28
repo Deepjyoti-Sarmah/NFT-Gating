@@ -23,6 +23,10 @@ const fetchNFTs = async(account) => {
 }
 // fetchNFTs().then(console.log);
 
+app.get("/",(req, res) => {
+  res.send("Hi Ngrok");
+})
+
 app.post('/members', async(req, res) => {
   try {
     const account = req.body.from;
