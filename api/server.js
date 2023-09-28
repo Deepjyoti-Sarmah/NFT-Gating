@@ -42,6 +42,10 @@ app.post('/members', async(req, res) => {
   }
 })
 
+app.post('/webhook', async(res, req) => {
+  console.log("Hi there");
+})
+
 
 
 const PORT = 3000;
