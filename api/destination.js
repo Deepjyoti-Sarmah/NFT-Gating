@@ -1,6 +1,5 @@
 const axios = require('axios');
 //
-// '54975241-61f0-4e67-bcdf-69088c0697c2'
 //
 const headers = {
   'accept': 'application/json',
@@ -9,7 +8,7 @@ const headers = {
 
 const data = {
   name: 'My Destination',
-  to_url: 'https://7411-2409-4065-d14-21b-cf3-6c43-bd08-3abb.ngrok-free.app/webhook',
+  to_url: 'https://50cf-2409-408a-8215-a35e-1175-54f2-20bb-12b3.ngrok-free.app/webhook',
   webhook_type: 'POST',
   service: 'webhook',
   payload_type: 5

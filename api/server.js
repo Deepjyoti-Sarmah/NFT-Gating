@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 const web3 = new Web3("https://skilled-wiser-lake.ethereum-sepolia.discover.quiknode.pro/73477a64596690dd501ed8f4cd73113918f4800a/");
-const contractAddress = "0x1C5008E8853D89E6bD823A72FCB6512fA1b74EC8";
+const contractAddress = "0x7fb0f3c347056d2d7141f59f26484e3a35b528ca";
 
 const contract = new web3.eth.Contract(ABI, contractAddress);
 // console.log(contract);

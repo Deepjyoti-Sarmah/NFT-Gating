@@ -9,7 +9,7 @@ const Home = () => {
   const revealMsg = async() => {
     try {
       const account = location.state.address;
-      // console.log(account);
+      console.log(account);
       const res = await fetch('http://localhost:3000/members', {
         method: "POST",
         headers: {
@@ -18,7 +18,7 @@ const Home = () => {
         body:JSON.stringify({from:account})
       });
       const data = await res.json();
-      // console.log(data);
+      console.log(data);
       if (data.status === 200) {
         navigateTo("/members");
       }else {
