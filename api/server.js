@@ -43,7 +43,16 @@ app.post('/members', async(req, res) => {
 })
 
 app.post('/webhook', async(res, req) => {
-  console.log("Hi there");
+  try {
+    
+    const account = res.body[0].from;
+    const numNFTs = await fetchNFTs(account);
+
+    console.log(account);
+  } catch (error) {
+    console.log(error)
+    
+  }
 })
 
 

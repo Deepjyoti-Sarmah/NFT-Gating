@@ -1,3 +1,6 @@
+
+// 5fe75009-8c23-4560-b9a1-861938cff943
+
 const axios = require('axios');
 
 const headers = {
@@ -7,9 +10,9 @@ const headers = {
 
 const data = {
   name: 'NFT Transfer',
-  expression: '',
+  expression: 'KHR4X2xvZ3NfdG9waWMxID1+ICcxODk5MjY4NEZCZUVFZDVBNjFCNDg2MTBmZWM2MTM3YTkyNGNCQzk4JykgJiYgCih0eF9sb2dzX2FkZHJlc3MgPT0gJzB4MjRhN2M4NzlkZDc0MzYxYTNjNmQ0NmNmMjY4OWM5NTEwMmIyOGNjMicpICYmIAoodHhfbG9nc190b3BpYzAgPT0gJzB4NDRkMTQ5NWVlYTFjNDZmZTJmOGJkZjdhMmRjYmIzNDE1NTRiNGFiZWMzMTE4YmFkNGQ0MTJhZDkxOGEyYTQ2OCcpCgo=',
   network: 'ethereum-sepolia',
-  destinationIds: ['']
+  destinationIds: ['5fe75009-8c23-4560-b9a1-861938cff943']
 };
 
 axios.post('https://api.quicknode.com/quickalerts/rest/v1/notifications', data, { headers })
@@ -29,5 +32,5 @@ axios.post('https://api.quicknode.com/quickalerts/rest/v1/notifications', data, 
 
 
 // (tx_logs_topic1 =~ '18992684FBeEEd5A61B48610fec6137a924cBC98') && 
-// (tx_logs_address == '0x7fb0f3c347056d2d7141f59f26484e3a35b528ca') && 
-// (tx_logs_topic0 == '0xd7253e38c6e3ae4d341ee9e4824c69c1c060ed67a312642ac582b26a555a611c')
+// (tx_logs_address == '0x24a7c879dd74361a3c6d46cf2689c95102b28cc2') && 
+// (tx_logs_topic0 == '0x44d1495eea1c46fe2f8bdf7a2dcbb341554b4abec3118bad4d412ad918a2a468')

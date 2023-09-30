@@ -16,3 +16,8 @@ const data = {
 axios.post('https://api.quicknode.com/quickalerts/rest/v1/destinations', data, { headers })
   .then(response => console.log("Response Data",response.data))
   .catch(error => console.log('error', error));
+
+
+
+
+// 5fe75009-8c23-4560-b9a1-861938cff943
