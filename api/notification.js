@@ -1,7 +1,7 @@
 
 // 5fe75009-8c23-4560-b9a1-861938cff943
 
-const axios = require('axios');
+import { post } from 'axios';
 
 const headers = {
   'accept': 'application/json',
@@ -15,7 +15,7 @@ const data = {
   destinationIds: ['5fe75009-8c23-4560-b9a1-861938cff943']
 };
 
-axios.post('https://api.quicknode.com/quickalerts/rest/v1/notifications', data, { headers })
+post('https://api.quicknode.com/quickalerts/rest/v1/notifications', data, { headers })
   .then(response => console.log(response.data))
   .catch(error => console.log('error', error));
 
