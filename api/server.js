@@ -2,6 +2,7 @@ const express = require("express");
 const {Web3} = require("web3"); 
 const ABI = require("./ABI.json");
 const cors = require("cors");
+const sockerIO = require('socket.io');
 
 const app = express();
 app.use(cors());
@@ -47,6 +48,7 @@ app.post('/webhook', async(res, req) => {
     
     const account = res.body[0].from;
     const numNFTs = await fetchNFTs(account);
+    res.statud(200).json({status:200, message: "Webhook Triggered"});
 
     console.log(account);
   } catch (error) {
@@ -59,6 +61,11 @@ app.post('/webhook', async(res, req) => {
 
 const PORT = 3000;
 
-app.listen(PORT,() => {
+const server = app.listen(PORT,() => {
   console.log(`Server is running at ${PORT}`)
+})
+
+const io = sockerIO(server);
+io.on("connection", () => {
+  console.log("Connected");
 })
